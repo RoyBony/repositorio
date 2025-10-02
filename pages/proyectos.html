@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(90deg, #0056b3, #0096c7);
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .navbar a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 12px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+
+        .logo {
+            width: 50px;
+            border-radius: 8px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        /* Botón WhatsApp */
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-whatsapp i {
+            font-size: 18px;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebe57;
+            transform: scale(1.05);
+        }
+
+        /* Estilos para proyectos */
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 120px auto 40px auto; /* margen superior extra para compensar navbar fija */
+            max-width: 1100px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 25px;
+            border: none;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #222;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .btn-proyecto {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-proyecto:hover {
+            background: linear-gradient(135deg, #0056b3, #0096c7);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: #222;
+            font-size: 2rem;
+        }
+
+        /* Íconos de proyectos */
+        .icono {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #00c6ff;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <!-- Menú -->
+        <nav class="navbar">
+            <img src="../img/logo.jpeg" alt="logo cuadrado" class="logo">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Proyectos.html">Proyectos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+
+            <!-- Botón WhatsApp -->
+            <a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </nav>
+
+        <p style="text-align:center; margin-top:100px; font-size:1.1rem;">Esta es la página de <strong>Nosotros</strong></p>
+
+        <!-- Sección de proyectos -->
+        <h2>Nuestros Proyectos</h2>
+        <div class="proyectos">
+            <!-- Proyecto 1 -->
+            <div class="card">
+                <span class="icono">🌐</span>
+                <h3>Sitio Web Empresarial</h3>
+                <p>
+                    Desarrollo de un portal web para pequeñas empresas,
+                    con diseño responsivo, optimización SEO y panel
+                    de administración básico.
+                </p>
+                <a href="#" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="card">
+                <span class="icono">📱</span>
+                <h3>Aplicación Web Interactiva</h3>
+                <p>
+                    Creación de una aplicación web con JavaScript moderno
+                    para gestionar tareas en tiempo real. Incluye interacción
+                    dinámica y almacenamiento local.
+                </p>
+                <a href="#" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="card">
+                <span class="icono">💻</span>
+                <h3>Base de Datos</h3>
+                <p>
+                    Implementación de un sistema back-end con Node.js y Firebase,
+                    que permite almacenar y consultar datos de forma segura y escalable.
+                </p>
+                <a href="#" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="card">
+                <span class="icono">🎨</span>
+                <h3>Portafolio Creativo</h3>
+                <p>
+                    Desarrollo de un portafolio personal moderno,
+                    con animaciones en CSS y efectos visuales para destacar
+                    proyectos y habilidades.
+                </p>
+                <a href="#" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-2">&copy; 2025 - Mi Sitio Web | Todos los derechos reservados</p>
+        <div>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
